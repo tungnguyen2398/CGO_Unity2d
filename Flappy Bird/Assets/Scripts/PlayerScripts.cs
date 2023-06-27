@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerScripts : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rb;
@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
         bool playerInput = Input.GetKeyDown(KeyCode.Space);
         if (playerInput)
         {
-            Debug.Log("Space pressed!");
             rb.velocity = Vector2.up * jumpForce; // Nhảy lên khi nhấn phím nhảy
         }
     
@@ -28,14 +27,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == "pipe down")
+        if(collision.gameObject.name == "pipe down" || collision.gameObject
+            .name == "pipe up")
         {
-            Debug.Log("collided with pipe");
+            Debug.Log("Bird is dead");
         }
 
         if(collision.gameObject.name == "Ground")
         {
-            Debug.Log("collided with ground");
+            Debug.Log("Bird is dead");
+        }
+
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Score check")
+        {
+            Debug.Log("SCore!!");
         }
     }
 }
