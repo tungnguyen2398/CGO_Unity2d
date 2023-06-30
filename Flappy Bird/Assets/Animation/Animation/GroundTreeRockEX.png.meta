@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,7 +139,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GroundTreeRockEX_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 864
+        width: 221
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bad5b9a05277b48bbfb6ae3e87111c
+      internalID: -1198314854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 862
+        width: 260
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75788586f3f51ec48b62c2d46e864426
+      internalID: -2129035094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1001
+        width: 268
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bada7fc30d96937498f9df40bd2156fd
+      internalID: -669612439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_3
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 910
+        width: 134
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62d4f89c1c3bbb4b85302f5b852b88a
+      internalID: 404877651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_4
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 884
+        width: 314
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0fa393cb9ffb54fb23f965a37be0df
+      internalID: -1653007411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_5
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 836
+        width: 390
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766461fe8bc3ef540b2d0312ba03f5c0
+      internalID: 726370816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 801
+        width: 499
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b431e713458c53498a21860175d0ab7
+      internalID: 1085213537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 789
+        width: 336
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e16acce47d24d449dce03562608fed
+      internalID: 1349633728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_8
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 782
+        width: 127
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecba34639ea64f44afabe46e0928c2c
+      internalID: 2079330506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 184
+        width: 567
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a23dd472d709074fb1042027cf0f6f4
+      internalID: 463630134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_10
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 411
+        width: 119
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c702a2f35d78d1846a8065ed1c68aa82
+      internalID: -237009210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_11
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 463
+        width: 46
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396e5c8c654f41b45bdc5afa2a42d351
+      internalID: 819737754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_12
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 184
+        width: 383
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f6d7aa4f35909479db0b3c2ed1e5db
+      internalID: 1979011762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_13
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 192
+        width: 150
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5540d65dbd6882842bf1a4d8cb1f947e
+      internalID: 1318006988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_14
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 419
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46771a66c95935147ad0c2540d220821
+      internalID: -1123373997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_15
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 318
+        width: 470
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a58cba943d97d4a9796cf98f775035
+      internalID: -2067891786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_16
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 203
+        width: 274
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6eb839537ed6142acc916150896a42
+      internalID: -1036067793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GroundTreeRockEX_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 10
+        width: 1699
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c632404c4942dad4d8c0e352bb3c6fb5
+      internalID: -1785098310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -150,7 +528,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GroundTreeRockEX_0: -1198314854
+      GroundTreeRockEX_1: -2129035094
+      GroundTreeRockEX_10: -237009210
+      GroundTreeRockEX_11: 819737754
+      GroundTreeRockEX_12: 1979011762
+      GroundTreeRockEX_13: 1318006988
+      GroundTreeRockEX_14: -1123373997
+      GroundTreeRockEX_15: -2067891786
+      GroundTreeRockEX_16: -1036067793
+      GroundTreeRockEX_17: -1785098310
+      GroundTreeRockEX_2: -669612439
+      GroundTreeRockEX_3: 404877651
+      GroundTreeRockEX_4: -1653007411
+      GroundTreeRockEX_5: 726370816
+      GroundTreeRockEX_6: 1085213537
+      GroundTreeRockEX_7: 1349633728
+      GroundTreeRockEX_8: 2079330506
+      GroundTreeRockEX_9: 463630134
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
