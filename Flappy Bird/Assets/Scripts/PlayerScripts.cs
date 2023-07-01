@@ -8,6 +8,8 @@ public class PlayerScripts : MonoBehaviour
     public Rigidbody2D rb;
     public BoxCollider2D collision;
     [SerializeField]private int jumpForce;
+    public float jumpAngle;
+    public float rotateAngle;
     
     void Start()
     {
@@ -16,13 +18,9 @@ public class PlayerScripts : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
-        bool playerInput = Input.GetKeyDown(KeyCode.Space);
-        if (playerInput)
-        {
-            rb.velocity = Vector2.up * jumpForce; // Nhảy lên khi nhấn phím nhảy
-        }
-    
+    {     
+        Jump();
+        RotateBird();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -47,5 +45,20 @@ public class PlayerScripts : MonoBehaviour
         {
             Debug.Log("SCore!!");
         }
+    }
+
+    protected void Jump()
+    {
+        bool playerInput = Input.GetKeyDown(KeyCode.Space);
+        if (playerInput)
+        {
+            rb.velocity = Vector2.up * jumpForce; // Nhảy lên khi nhấn phím nhảy
+            transform.eulerAngles = new Vector3(0, 0, jumpAngle);
+        }
+    }
+
+    protected void RotateBird()
+    {
+            transform.eulerAngles -= new Vector3(0, 0, rotateAngle * Time.deltaTime);
     }
 }
