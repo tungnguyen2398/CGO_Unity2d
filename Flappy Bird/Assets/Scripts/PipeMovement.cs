@@ -13,6 +13,16 @@ public class PipeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        destroyPipe();
         this.transform.position += Vector3.left * Time.deltaTime;
     }
+
+   private void destroyPipe()
+    {
+        if(this.transform.position.x <= -5)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
