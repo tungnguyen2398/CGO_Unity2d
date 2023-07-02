@@ -17,7 +17,9 @@ public class Pipespawner : MonoBehaviour
 
     void Update()
     {
-        if(currentTimeSpawn > delayPerSpawn)
+        if (GameManager.Instance.GameStart == false) return;
+        if (GameManager.Instance.GameOver) return;
+        if (currentTimeSpawn > delayPerSpawn)
         {
             currentTimeSpawn = 0;
             spawnPipe();

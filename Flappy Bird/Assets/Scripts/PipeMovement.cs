@@ -13,6 +13,7 @@ public class PipeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.GameOver) return;
         destroyPipe();
         this.transform.position += Vector3.left * Time.deltaTime;
     }
