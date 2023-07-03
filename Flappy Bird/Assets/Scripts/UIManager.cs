@@ -31,4 +31,9 @@ public class UIManager : MonoBehaviour
         buttonStartGame.SetActive(false);
 
     }
+
+    public void PauseGame()
+    {
+        GameManager.Instance.PauseGame();
+    }
 }

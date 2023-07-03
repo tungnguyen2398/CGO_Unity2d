@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public bool GameOver;
     public bool GameStart;
     public int score;
+    public bool isPaused;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +21,40 @@ public class GameManager : MonoBehaviour
     {
         
     }
-
+    /*------Pause------- */
     public void StartGame()
     {
         GameStart = true;
     }
+
+    /*------Score------- */ 
     public void AddScore()
     {
         score++;
         UIManager.Instance.UpdateScore(score);
+    }
+
+    /*------Pause------- */
+    public void PauseGame()
+    {
+        if (isPaused == false)
+        {
+            Pause();
+        }
+        else
+        {
+            Resume();
+        }
+    }
+    protected void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0;
+    }
+
+    protected void Resume()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
     }
 }
