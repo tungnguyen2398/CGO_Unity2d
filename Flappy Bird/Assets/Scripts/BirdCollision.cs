@@ -6,7 +6,6 @@ public class BirdCollision : MonoBehaviour
 {
     // Start is called before the first frame update
     public PlayerScripts bird;
-    private int hitCount = 0;
     void Start()
     {
         bird = GetComponent<PlayerScripts>();
@@ -32,17 +31,12 @@ public class BirdCollision : MonoBehaviour
         }
     }
 
-    protected void CheckDie(Collision2D collision)
+    public void CheckDie(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("ground"))
         {
             GameManager.Instance.GameOver = true;
-           
-            if (hitCount == 0)
-            {
-                AudioManager.Instance.PlayDeadSound();
-            }
-            hitCount++;
         }
     }
+
 }

@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance = null;
     public Text textScore;
     public GameObject buttonStartGame;
+    public GameObject loseGamePanel;
+
+
     void Start()
     {
         Instance = this;
@@ -35,5 +38,10 @@ public class UIManager : MonoBehaviour
     public void PauseGame()
     {
         GameManager.Instance.PauseGame();
+    }
+
+    public void LoseGame()
+    {
+        loseGamePanel.SetActive(true);
     }
 }

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool GameStart;
     public int score;
     public bool isPaused;
+    private int collisionCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,5 +57,16 @@ public class GameManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1;
+    }
+
+    public void EndGame()
+    {
+        if (collisionCount == 0)
+        {
+            GameOver = true;
+            AudioManager.Instance.PlayDeadSound();
+            UIManager.Instance.LoseGame();
+        }
+        collisionCount++;
     }
 }
