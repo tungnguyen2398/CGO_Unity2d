@@ -43,7 +43,12 @@ public class UIManager : MonoBehaviour
     public void LoseGame()
     {
         loseGamePanel.showUI();
-        GameManager.Instance.EndGame();
+
+        int playerScore = GameManager.Instance.GetScore();
+        loseGamePanel.SetPlayerScoreText(playerScore);
+        loseGamePanel.SetMedalImage(playerScore);
+        loseGamePanel.SetBestScoreText(playerScore);
+
         Debug.Log("show UI");
     }
 }

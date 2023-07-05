@@ -9,6 +9,10 @@ public class UILoseGameScript : MonoBehaviour
     public Text playerScoreText;
     public Text bestScoreText;
     public Image medalImage;
+    public Sprite
+        goldSprite,
+        silverSprite,
+        bronzeSprite;
     public void showUI()
     {
         gameObject.SetActive(true);
@@ -24,7 +28,7 @@ public class UILoseGameScript : MonoBehaviour
         playerScoreText.text = score.ToString();
     }
 
-    public void SetBestScoreTextt(int bestScore)
+    public void SetBestScoreText(int bestScore)
     {
         bestScoreText.text = bestScore.ToString();
     }
@@ -33,14 +37,15 @@ public class UILoseGameScript : MonoBehaviour
     {
         if(score >= 7)
         {
-
+            medalImage.sprite = goldSprite;
         } else if(score >= 4)
         {
-
+            medalImage.sprite = silverSprite;
         }
         else
         {
-
+            medalImage.sprite = bronzeSprite;
+            Debug.Log("bronze");
         }
     }
 }

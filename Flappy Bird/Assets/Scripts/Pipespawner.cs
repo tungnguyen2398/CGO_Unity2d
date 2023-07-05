@@ -12,7 +12,10 @@ public class Pipespawner : MonoBehaviour
     private float currentTimeSpawn;
     void Start()
     {
-        
+        if (GameManager.Instance.GameStart)
+        {
+            spawnPipe();
+        }
     }
 
     void Update()
@@ -21,7 +24,7 @@ public class Pipespawner : MonoBehaviour
         if (GameManager.Instance.GameOver) return;
         if (currentTimeSpawn > delayPerSpawn)
         {
-            currentTimeSpawn = 0;
+            currentTimeSpawn = 2;
             spawnPipe();
         }
 
