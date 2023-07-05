@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         {
             GameOver = true;
             AudioManager.Instance.PlayDeadSound();
-            UIManager.Instance.LoseGame();
+            Debug.Log("bird is dead");
         }
         collisionCount++;
     }

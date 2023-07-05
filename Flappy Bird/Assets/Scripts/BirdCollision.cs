@@ -35,7 +35,7 @@ public class BirdCollision : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("ground"))
         {
-            GameManager.Instance.GameOver = true;
+            GameManager.Instance.EndGame();
         }
     }
 

@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance = null;
     public Text textScore;
     public GameObject buttonStartGame;
-    public GameObject loseGamePanel;
+    public UILoseGameScript loseGamePanel;
 
 
     void Start()
@@ -42,6 +42,8 @@ public class UIManager : MonoBehaviour
 
     public void LoseGame()
     {
-        loseGamePanel.SetActive(true);
+        loseGamePanel.showUI();
+        GameManager.Instance.EndGame();
+        Debug.Log("show UI");
     }
 }
