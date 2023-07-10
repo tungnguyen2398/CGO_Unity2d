@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance = null;
     public bool GameOver;
     public bool GameStart;
-    public int score;
     public bool isPaused;
     private int collisionCount = 0;
     // Start is called before the first frame update
@@ -31,8 +30,9 @@ public class GameManager : MonoBehaviour
     /*------Score------- */ 
     public void AddScore()
     {
-        score++;
-        UIManager.Instance.UpdateScore(score);
+        DataManager.Instance.AddScore();
+        int playerScore = DataManager.Instance.GetScore();
+        UIManager.Instance.UpdateScore(playerScore);
     }
 
     /*------Pause------- */
@@ -73,6 +73,6 @@ public class GameManager : MonoBehaviour
 
     public int GetScore()
     {
-        return score;
+        return DataManager.Instance.GetScore();
     }
 }

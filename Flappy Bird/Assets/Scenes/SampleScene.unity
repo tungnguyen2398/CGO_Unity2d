@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1113194289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f46335b9a6d034191c6488ec976bff, type: 3}
+  m_Script: {fileID: 11500000, guid: 9108315f5ee0d384fab6b0192aef2305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonPauseSprite: {fileID: -1075659427, guid: d58c61d121d3689428391f37e3db2af8, type: 3}
