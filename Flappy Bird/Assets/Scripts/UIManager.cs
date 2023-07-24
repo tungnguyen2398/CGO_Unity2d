@@ -50,5 +50,8 @@ public class UIManager : MonoBehaviour
         loseGamePanel.SetBestScoreText(playerScore);
 
         Debug.Log("show UI");
+
+        int bestScore = PlayerPrefs.GetInt("BestScore");
+        loseGamePanel.SetBestScoreText(bestScore);
     }
 }

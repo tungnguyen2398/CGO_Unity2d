@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UILoseGameScript : MonoBehaviour
 {
@@ -47,6 +48,11 @@ public class UILoseGameScript : MonoBehaviour
             medalImage.sprite = bronzeSprite;
             Debug.Log("bronze");
         }
+    }
+
+    public void PlayerAgainOnClick()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }
 

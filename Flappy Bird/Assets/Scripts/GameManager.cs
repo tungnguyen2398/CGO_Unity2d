@@ -63,10 +63,12 @@ public class GameManager : MonoBehaviour
     {
         if (collisionCount == 0)
         {
+            DataManager.Instance.SetBestScore();
             GameOver = true;
             AudioManager.Instance.PlayDeadSound();
             Debug.Log("bird is dead");
             UIManager.Instance.LoseGame();
+
         }
         collisionCount++;
     }

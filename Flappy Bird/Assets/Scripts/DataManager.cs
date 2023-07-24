@@ -9,9 +9,15 @@ public class DataManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+
+        if (PlayerPrefs.HasKey("FirstPlay"))
+        {
+            CurrentScore = 0;
+            PlayerPrefs.SetInt("BestScore", 0);
+            PlayerPrefs.SetInt("FirstPlay", 0);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -21,9 +27,13 @@ public class DataManager : MonoBehaviour
     {
 
     }
-    public void SetBestScore(int score)
+    public void SetBestScore()
     {
-
+        int lastBestScore = PlayerPrefs.GetInt("BestScore");
+        if(CurrentScore > lastBestScore)
+        {
+            PlayerPrefs.SetInt("BestScore", CurrentScore);
+        }
     }
 
     public int GetScore()
@@ -34,5 +44,7 @@ public class DataManager : MonoBehaviour
     public void AddScore()
     {
         CurrentScore++;
+
+        
     }
 }
